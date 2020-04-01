@@ -1,4 +1,4 @@
-import React, { Component, ifCommented } from 'react';
+import React, { Component } from 'react';
 import './style.css'
 
 class OrderItem extends Component {
@@ -18,7 +18,10 @@ class OrderItem extends Component {
     return (
       <div className='orderItem'>
         <div className='orderItem__picContainer'>
-          <img className='orderItem__pic' src={picture} />
+          <img
+            className='orderItem__pic'
+            src={picture}
+            alt={picture}/>
         </div>
         <div className='orderItem__content'>
           <div className='orderItem__product'>{product}</div>
